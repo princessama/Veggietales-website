@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/kun3aoz.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pale: "#F8F8EB",
+              purple: "#831D81",
+              yellow: "#EDCE11",
+              green: "#03592C",
+              orange: "#DF5539",
+            },
+            fontFamily: {
+              'imaginaryfriend-bb':['imaginaryfriend-bb', 'sans-serif']
+
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-pale">
+
+</style>
+<nav class="flex items-center bg-purple p-3 flex-wrap">
+      <a href="#" class="p-2 mr-4 inline-flex items-center">
+  
+        </svg>
+        
+        <div class="absolute float bottom-50 "> 
+          <img class=" w-64" src="./images/logo.png"> 
+        </div>
+      </a>
+      <button
+        class="text-yellow inline-flex p-3 hover:bg-yellow rounded lg:hidden ml-auto hover:text-purple outline-none nav-toggler"
+        data-target="#navigation"
+      >
+        <i class="material-icons text-5xl">...</i>
+      </button>
+      <div
+        class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+        id="navigation"
+      >
+        <div
+          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto font-imaginaryfriend-bb text-5xl space-x-20 "
+        >
+        <br>
+          <a
+            href="index.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow items-center justify-center hover:bg-yellow hover:text-purple"
+          >
+            <span>HOME</span>
+          </a>
+          <a
+            href="about.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow items-center justify-center hover:bg-yellow hover:text-purple"
+          >
+            <span>ABOUT</span>
+          </a>
+          <a
+            href="music-videos.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow items-center justify-center hover:bg-yellow hover:text-purple"
+          >
+            <span>VIDEOS</span>
+          </a>
+          <a
+            href="discography.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow items-center justify-center hover:bg-yellow hover:text-purple"
+          >
+            <span>DISCOGRAPHY</span>
+          </a>
+          <a
+            href="tour.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow items-center justify-center hover:bg-yellow hover:text-purple"
+          >
+            <span>TOUR</span>
+          </a>
+        </div>
+      </div>
+   
+    </nav>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+  $(".nav-toggler").each(function(_, navToggler) {
+    var target = $(navToggler).data("target");
+    $(navToggler).on("click", function() {
+      $(target).animate({
+        height: "toggle"
+      });
+    });
+  });
+});
+</script>
+  </body>
+</html>
