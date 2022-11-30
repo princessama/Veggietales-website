@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.typekit.net/kun3aoz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kun3aoz.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -17,8 +17,10 @@
               orange: "#DF5539",
             },
             fontFamily: {
-              'imaginaryfriend-bb':['imaginaryfriend-bb', 'sans-serif']
-
+              "imaginaryfriend-bb": ["imaginaryfriend-bb", "sans-serif"],
+            },
+            scale: {
+              1: "1",
             },
           },
         },
@@ -26,15 +28,10 @@
     </script>
   </head>
   <body class="bg-pale">
-
-</style>
-<nav class="flex items-center bg-purple p-3 flex-wrap">
+    <nav class="flex items-center bg-purple p-3 flex-wrap">
       <a href="#" class="p-2 mr-4 inline-flex items-center">
-  
-        </svg>
-        
-        <div class="absolute float bottom-50 "> 
-          <img class=" w-64" src="./images/logo.png"> 
+        <div class="absolute float bottom-50">
+          <img class="w-64" src="./images/logo.png" />
         </div>
       </a>
       <button
@@ -48,9 +45,9 @@
         id="navigation"
       >
         <div
-          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto font-imaginaryfriend-bb text-5xl space-x-20 "
+          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto font-imaginaryfriend-bb text-5xl space-x-20"
         >
-        <br>
+          <br />
           <a
             href="index.html"
             class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow items-center justify-center hover:bg-yellow hover:text-purple"
@@ -83,22 +80,161 @@
           </a>
         </div>
       </div>
-   
     </nav>
 
+    <div
+      class="flex flex-col md:flex-row flex-wrap items-center justify-center pt-20 pb-20"
+    >
+      <div class="w-1/2 flex flex-col items-center">
+        <img class="md:scale-150" src="./images/veg3.gif" />
+      </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-<script>
-  $(document).ready(function() {
-  $(".nav-toggler").each(function(_, navToggler) {
-    var target = $(navToggler).data("target");
-    $(navToggler).on("click", function() {
-      $(target).animate({
-        height: "toggle"
+      <div class="w-1/2 flex flex-col items-center">
+        <h1
+          class="text-green font-imaginaryfriend-bb text-8xl text-center pb-10 w-96"
+        >
+          How we started!
+        </h1>
+        <p class="text-green">
+          VeggieTales is created, written, and produced by Big Idea Productions.
+          In an age of media mega-mergers, Big Idea is a small, independent,
+          family entertainment company based in Chicago. We hope to help parents
+          everywhere by building a company filled with storytellers and artists
+          who are committed to using their gifts and talents to teach kids
+          timeless values like honesty, kindness, and forgiveness.
+        </p>
+        <br />
+        <p class="text-green">
+          Go to Big IdeaThe company began in 1993 when Phil Vischer started
+          creating the first VeggieTales video in a spare bedroom. With no money
+          and no connections, Phil had almost nothing except a computer and one
+          very BIG idea: that children's entertainment could do more than sell
+          toys - it could positively impact lives.
+        </p>
+      </div>
+    </div>
+
+    <h1
+      class="text-purple font-imaginaryfriend-bb font-bold text-7xl text-center"
+    >
+      Get to know us!
+    </h1>
+
+    <div
+      class="flex flex-col md:flex-row flex-wrap items-center justify-center pt-20"
+    >
+      <div>
+        <img class="object-scale-down h-80 w-96" src="./images/larry.png" />
+        <p class="text-purple text-center w-80">
+          Larry is cheerful, kind, creative, energetic, accident-prone, moral
+          and goofy. At times he is leader-like. He is in some ways quite the
+          opposite of his alter-ego LarryBoy. As LarryBoy, he is tough, brave
+          and serious.
+        </p>
+      </div>
+
+      <div>
+        <img class="w-52" src="./images/bob.png" />
+        <p class="text-purple text- center w-80">
+          Bob is a friendly but often stressed tomato. He acts as the straight
+          man of the hosts. He is always willing to teach children how to be
+          kind. He can easily be annoyed, especially by his best friend Larry
+          the Cucumber, and is irritated if he is not in control. In addition to
+          this he becomes unamused when his show is not going according to his
+          plan. Despite that, though, he is still a lovable and pleasant tomato.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap items-center justify-center">
+      <div>
+        <img src="./images/laura.png" />
+        <p>
+          Laura is sweet, outgoing, and fairly courteous. She always tries to be
+          the voice of reason, often trying to prove a point to her friends.
+          While her friend Junior is more ambitious, Laura is generally more
+          cautious. However, Laura isn’t afraid to get herself or others into a
+          little mischief every now and again.
+        </p>
+      </div>
+      <div><img src="./images/junior.png" /></div>
+      <p>
+        Junior can be described as curious, courteous, and naive. He’s always
+        eager to try new things and learn something along the way. Junior
+        ultimately functions as the surrogate child to any children watching the
+        show(s). Like most kids, Junior faces many challenges that are crucial
+        to a child’s mental and emotional development, like learning how to
+        forgive, dealing with bullies, and learning how to treat others with
+        love and respect. Nevertheless, he’s a fun, caring and lovable kid.
+      </p>
+    </div>
+
+    <div class="flex flex-wrap items-center justify-center">
+      <div>
+        <img src="./images/archie.png" />
+        <p>
+          He is usually depicted as snooty, intolerable of nonsense, funny, or
+          royal. He often plays as kings, geniuses, and authority figures. He is
+          quite eccentric, to say the least. He often uses complex vocabulary,
+          which often confuses some of the other veggies. He has shown
+          intolerance for Silly Songs in earlier shows, but as years have gone
+          by, he loosened up and even performed in his own silly songs.
+        </p>
+      </div>
+
+      <div>
+        <img src="./images/PaGrape.png" />
+        <p>
+          Pa Grape is very wise and down-to-earth, often being a source of good
+          advice to his friends and peers. He enjoys helping his friends and
+          encouraging them to do what is right. In contrast, Pa isn’t afraid to
+          have fun and be silly, which can make him look rather odd in the eyes
+          of his peers. But at the end of the day, Pa is someone the VeggieTales
+          crew can always rely on and trust through and through.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap items-center justify-center">
+      <div>
+        <img src="./images/Jim_Jerry.png" />
+        <p>
+          Bob and Larry are like Abbot and Costello, Jimmy and Jerry are like
+          Tweedledee and Tweedledum. They like eating and singing a lot. They
+          don’t do a whole lot, but they do like helping others when they’re
+          needed. Jimmy is considered to be the more brash and talkative one. It
+          has also been shown that he has a short temper. Jerry is quieter and
+          arguably slightly more intelligent than his brother. He is often shown
+          repeating some phrases from his brother.
+        </p>
+      </div>
+
+      <div>
+        <img src="./images/petunia.png" />
+        <p>
+          Petunia Rhubarb is very sweet and loves to remind others that true
+          beauty isn’t based on what someone looks like on the outside, but who
+          someone is on the inside that matters most.
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".nav-toggler").each(function (_, navToggler) {
+          var target = $(navToggler).data("target");
+          $(navToggler).on("click", function () {
+            $(target).animate({
+              height: "toggle",
+            });
+          });
+        });
       });
-    });
-  });
-});
-</script>
+    </script>
   </body>
 </html>
