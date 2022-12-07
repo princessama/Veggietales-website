@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/kun3aoz.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pale: "#F8F8EB",
+              purple: "#831D81",
+              yellow: "#EDCE11",
+              green: "#03592C",
+              orange: "#DF5539",
+            },
+            fontFamily: {
+              "imaginaryfriend-bb": ["imaginaryfriend-bb", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-pale">
+    <nav class="flex items-center bg-purple p-3 flex-wrap">
+      <a href="#" class="p-2 mr-4 inline-flex items-center">
+        <div class="absolute float bottom-50">
+          <img class="w-64" src="./images/logo.png" />
+        </div>
+      </a>
+      <button
+        class="text-yellow inline-flex p-3 hover:bg-yellow rounded lg:hidden ml-auto hover:text-purple outline-none nav-toggler"
+        data-target="#navigation"
+      >
+        <i class="material-icons text-5xl">...</i>
+      </button>
+      <div
+        class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+        id="navigation"
+      >
+        <div
+          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto font-imaginaryfriend-bb text-5xl space-x-20"
+        >
+          <br />
+          <a
+            href="index.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow items-center justify-center hover:bg-yellow hover:text-purple"
+          >
+            <span>HOME</span>
+          </a>
+          <a
+            href="about.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow items-center justify-center hover:bg-yellow hover:text-purple"
+          >
+            <span>ABOUT</span>
+          </a>
+          <a
+            href="music-videos.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow items-center justify-center hover:bg-yellow hover:text-purple"
+          >
+            <span>VIDEOS</span>
+          </a>
+          <a
+            href="discography.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow items-center justify-center hover:bg-yellow hover:text-purple"
+          >
+            <span>DISCOGRAPHY</span>
+          </a>
+          <a
+            href="tour.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-yellow items-center justify-center hover:bg-yellow hover:text-purple"
+          >
+            <span>TOUR</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <h1
+      class="text-green font-imaginaryfriend-bb font-bold text-6xl text-center pt-20"
+    >
+      Our albums over the years
+    </h1>
+
+    <h1
+      class="text-purple font-imaginaryfriend-bb font-bold text-6xl text-center pt-20"
+    >
+      1990s
+    </h1>
+
+    <div
+      class="flex flex-col md:flex-row flex-wrap items-center md:items-start justify-center pt-20"
+    >
+      <div class="w-100 md:w-1/2">
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/veggitunesalbum.jpg"
+        />
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          Veggie Tunes
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          November 21, 1995
+        </h3>
+        <ul class="text-orange text-center w-80 w-100 md:w-1/2">
+          <li>Veggie Tales Theme Song</li>
+          <li>God Is Bigger</li>
+          <li>Tha Water Buffalo Song</li>
+          <li>King Darius Suite</li>
+          <li>Oh, No! What We Gonna’ Do?</li>
+          <li>We’ve Got Some News</li>
+          <li>Fear Not, Daniel</li>
+          <li>You Were in His Hand</li>
+          <li>We Are the Grapes of Wrath</li>
+          <li>Some Veggies Went to Sea</li>
+          <li>The Forgiveness Song</li>
+          <li>Busy, Busy</li>
+          <li>Love Your Neighbor</li>
+          <li>The Hairbrush Song</li>
+          <li>I Can Be Your Friend</li>
+          <li>What We Have Learned</li>
+        </ul>
+      </div>
+
+      <div>
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/veryveggiechristmas.jpg"
+        />
+
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          A Very Veggie Chrisrmas
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          October 22, 1996
+        </h3>
+        <ul class="text-orange text-center">
+          <li>Talking</li>
+          <li>Feliz Navidad</li>
+          <li>More Talking</li>
+          <li>The Boar’s Head Carol</li>
+          <li>Still More Talking</li>
+          <li>Ring, Little Bells</li>
+          <li>Vegetables Talking</li>
+          <li>Go Tell It on the Mountain</li>
+          <li>More Vegetables Talking</li>
+          <li>Angels We Have Heard on High</li>
+          <li>Vegetables Talking About Watching a Video</li>
+          <li>Can’t Believe It’s Christmas</li>
+          <li>Vegetables Talking During a Video</li>
+          <li>Grumpy Kids</li>
+          <li>Oh Santa!</li>
+          <li>Even More Talking</li>
+          <li>He Is Born, the Holy Child</li>
+          <li>Vegetables Talking to Sheep</li>
+          <li>While by My Sheep</li>
+          <li>Vegetables Talking to a Polish Caterer</li>
+          <li>The 8 Polish Foods of Christmas</li>
+          <li>Vegetable Tire of Talking</li>
+          <li>The Big Medley!</li>
+          <li>The End of the Talking!</li>
+          <li>Away in a Manger</li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col md:flex-row flex-wrap items-center md:items-start justify-center pt-20"
+    >
+      <div class="w-100 md:w-1/2 pb-10">
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/veggietunes2.jpg"
+        />
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          Veggie Tunes 2
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          July 21, 1998, 1999
+        </h3>
+        <ul class="text-orange text-center w-80 w-100 md:w-1/2">
+          <li>Veggie Tales Theme Song</li>
+          <li>Dance of the Cucumber</li>
+          <li>Good Morning George</li>
+          <li>Think Of Me</li>
+          <li>The Bunny Song</li>
+          <li>The Bunny Song (New & Improved)</li>
+          <li>Stand Up!</li>
+          <li>Stand Up! (Reprise)</li>
+          <li>Love My Lips</li>
+          <li>Big Things Too</li>
+          <li>The Pirates Who Don't Do Anything</li>
+          <li>It's Laura's Fault</li>
+          <li>LarryBoy Theme Song</li>
+          <li>The Promise Land</li>
+          <li>The Lord Has Given</li>
+          <li>Keep Walking</li>
+          <li>The Lord Has Given (Reprise)</li>
+          <li>The Promise Land (Reprise)</li>
+          <li>The Song of the Cebú</li>
+          <li>What Have We Learned</li>
+        </ul>
+      </div>
+
+      <div>
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/larryboy_soundtrack.jpg"
+        />
+
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          Larry-Boy: The Soundtrack
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          July 27, 1999
+        </h3>
+        <ul class="text-orange text-center">
+          <li>Cordial Greetings from Alfred</li>
+          <li>A Fib Falls and It's Laura's Fault</li>
+          <li>The Search and It's Lenny's Fault</li>
+          <li>A Fib Grows and The Water Tower</li>
+          <li>Junior Tells The Truth!</li>
+          <li>Look Who's Here To Help</li>
+          <li>Bumblyburg Groove Remix</li>
+          <li>Bumblyburg Slim Down Remix</li>
+          <li>Thanks But No Thanks</li>
+          <li>Rumor Weed Introduction</li>
+          <li>The Seed Is Planted and the Rumor Spreads</li>
+          <li>The Rumor Weed Song</li>
+          <li>Larry-Boy to the Rescue</li>
+          <li>The Sewer and Town Square</li>
+          <li>The Confession and the Bloom</li>
+          <li>It's The W's</li>
+          <li>The Rumor Weed Song (W's Version)</li>
+          <li>Ta Ta!</li>
+          <li>Larry-Boy Theme Song</li>
+        </ul>
+      </div>
+    </div>
+
+    <h1
+      class="text-purple font-imaginaryfriend-bb font-bold text-6xl text-center pt-20"
+    >
+      2000s
+    </h1>
+
+    <div
+      class="flex flex-col md:flex-row flex-wrap items-center md:items-start justify-center pt-20"
+    >
+      <div class="w-100 md:w-1/2 pb-10">
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/queenkingblueberry.jpeg"
+        />
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          A Queen, a King, and a Very Blue Berry
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          October 31, 2000
+        </h3>
+        <ul class="text-orange text-center w-80 w-100 md:w-1/2">
+          <li>VeggieTales Theme Song</li>
+          <li>I'm So Blue</li>
+          <li>Stuff-Mart Suite</li>
+          <li>Salesmunz Rap</li>
+          <li>Thankfulness Song</li>
+          <li>Stuff Stuff, Mart Mart</li>
+          <li>His Cheeseburger</li>
+          <li>The Yodeling Veterinarian of the Alps</li>
+          <li>I Love My Duck</li>
+          <li>I Must Have It</li>
+          <li>There Once Was a Man</li>
+          <li>The Selfish Song</li>
+          <li>Endangered Love</li>
+          <li>The Battle Prelude</li>
+          <li>Haman's Song</li>
+          <li>The Battle Is Not Ours</li>
+          <li>Lost Puppies</li>
+          <li>What Have We Learned</li>
+        </ul>
+      </div>
+
+      <div>
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/sillysongswithlary.jpg"
+        />
+
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          Silly Songs with Larry
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          September 18, 2001
+        </h3>
+        <ul class="text-orange text-center">
+          <li>The Water Buffalo Song</li>
+          <li>The Hairbrush Song</li>
+          <li>Dance of the Cucumber</li>
+          <li>I Love My Lips</li>
+          <li>The Pirates Who Don't Do Anything</li>
+          <li>The Song of the Cebú</li>
+          <li>His Cheeseburger</li>
+          <li>The Yodeling Veterinarian of the Alps</li>
+          <li>Endangered Love</li>
+          <li>Larry's High Silk Hat</li>
+          <li>Lost Puppies</li>
+          <li>Oh, Santa!</li>
+          <li>Do the Moo Shoo</li>
+          <li>Silly Song Remix Medley</li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col md:flex-row flex-wrap items-center md:items-start justify-center pt-20"
+    >
+      <div class="w-100 md:w-1/2 pb-10">
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/veggie_rocks.png"
+        />
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          VeggieRocks!
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          March 9, 2004
+        </h3>
+        <ul class="text-orange text-center w-80 w-100 md:w-1/2">
+          <li>VeggieTales Theme Song - Rebecca St. James</li>
+          <li>I Love My Lips - Stevenson</li>
+          <li>Promised Land - Sanctus Real</li>
+          <li>In The Belly of the Whale - Newsboys</li>
+          <li>The Water Buffalo Song - Superchick</li>
+          <li>I'm So Blue - Paul Colman</li>
+          <li>Hairbrush Song - Audio Adrenaline</li>
+          <li>The Pirates Who Don't Do Anything - Relient K</li>
+          <li>I Can be Your Friend - The O.C. Supertones</li>
+          <li>His Cheeseburger - Tait</li>
+          <li>Stand - Skillet</li>
+        </ul>
+      </div>
+
+      <div>
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/boyz_in_the_sink.jpg"
+        />
+
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          Boyz in the Sink
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          October 3, 2006
+        </h3>
+        <ul class="text-orange text-center">
+          <li>Boyz in the Sink</li>
+          <li>Bigger Than The Boogie Man</li>
+          <li>The B-O-Y-Z Dance</li>
+          <li>Belly Button 2006</li>
+          <li>The Hairbrush Song</li>
+          <li>Do the Moo Shoo</li>
+          <li>My Day</li>
+          <li>The Funky Polka</li>
+          <li>Cheeseburger</li>
+          <li>Oh No! What We Gonna Do?</li>
+          <li>I Can Be Your Friend</li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col md:flex-row flex-wrap items-center md:items-start justify-center pt-20"
+    >
+      <div class="w-100 md:w-1/2 pb-10">
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/veggietales-boblarrysingthe70s.jpg"
+        />
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          Bob & Larry Sing the 70s
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          August 1, 2006
+        </h3>
+        <ul class="text-orange text-center w-80 w-100 md:w-1/2">
+          <li>Funky Town</li>
+          <li>The Loco-Motion</li>
+          <li>Lean on Me</li>
+          <li>Car Wash</li>
+          <li>Proud Mary</li>
+          <li>Jesus Is Just Alright</li>
+          <li>You Are the Sunshine of My Life</li>
+          <li>Crocodile Rock</li>
+          <li>The Lion Sleeps Tonight</li>
+          <li>I Just Want to Celebrate</li>
+          <li>I'd Like to Teach the World to Sing</li>
+          <li>We Are Family</li>
+        </ul>
+      </div>
+
+      <div>
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/god_made_you_special.jpg"
+        />
+
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          God Made You Special
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          August 11th, 2007
+        </h3>
+        <ul class="text-orange text-center">
+          <li>God Made You Special</li>
+          <li>I Want to Dance</li>
+          <li>Sport Utility Vehicle</li>
+          <li>Big Things Too</li>
+          <li>Love My Lips!</li>
+          <li>Love Your Neighbor</li>
+          <li>I Can Be Your Friend</li>
+          <li>The Hairbrush Song</li>
+          <li>My Day</li>
+          <li>Hope's Song</li>
+          <li>It's About Love</li>
+        </ul>
+      </div>
+    </div>
+
+    <h1
+      class="text-purple font-imaginaryfriend-bb font-bold text-6xl text-center pt-20"
+    >
+      2010s
+    </h1>
+
+    <div
+      class="flex flex-col md:flex-row flex-wrap items-center md:items-start justify-center pt-20"
+    >
+      <div class="w-100 md:w-1/2 pb-10">
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/bob_larry_80s.jpg"
+        />
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          Bob & Larry Sing the 80's
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          October 2, 2010
+        </h3>
+        <ul class="text-orange text-center w-80 w-100 md:w-1/2">
+          <li>Gourds Just Want To Have Fun</li>
+          <li>La Bamba</li>
+          <li>Everybody Have Fun Tonight</li>
+          <li>Walking On Sunshine</li>
+          <li>Footloose</li>
+          <li>That's What Friends Are For</li>
+          <li>We Got The Beat</li>
+          <li>Walk Like An Egyptian</li>
+          <li>Power Of Love</li>
+          <li>Don't Worry Be Happy</li>
+        </ul>
+      </div>
+
+      <div>
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/songs_for_a_princess.jpeg"
+        />
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          Songs for a Princess
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          August 13th, 2011
+        </h3>
+        <ul class="text-orange text-center">
+          <li>That's Not Everything</li>
+          <li>Radio Sweetheart</li>
+          <li>Stand</li>
+          <li>God's Way is the Best Way</li>
+          <li>Alone</li>
+          <li>This Little Light of Mine</li>
+          <li>One In a Million</li>
+          <li>I Can Be Your Friend</li>
+          <li>Right Where I Belong</li>
+          <li>That's Not Everything</li>
+          <li>Radio Sweetheart</li>
+          <li>God's Way is the Best Way</li>
+          <li>This Little Light of Mine</li>
+          <li>One In a Million</li>
+          <li>I Can Be Your Friend</li>
+          <li>Right Where I Belong</li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col md:flex-row flex-wrap items-center md:items-start justify-center pt-20"
+    >
+      <div class="w-100 md:w-1/2 pb-10">
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/celery_night.jpeg"
+        />
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          Celery Night Fever
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2 w-100 md:w-1/2"
+        >
+          August 5th, 2014
+        </h3>
+        <ul class="text-orange text-center w-80 w-100 md:w-1/2">
+          <li>Together</li>
+          <li>Checkmarks</li>
+          <li>Perfect Puppy</li>
+          <li>Feel the Beat</li>
+          <li>How It Used to Be</li>
+          <li>Tear It Down</li>
+          <li>Together (Reprise)</li>
+          <li>Together</li>
+          <li>I Can Be Your Friend</li>
+        </ul>
+      </div>
+
+      <div>
+        <img
+          class="object-scale-down h-80 w-96"
+          src="./images/silly_love_songs.jpeg"
+        />
+
+        <h2
+          class="text-green font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          Silly Love Songs
+        </h2>
+        <h3
+          class="text-purple font-imaginaryfriend-bb text-5xl text-center pb-2"
+        >
+          January 26, 2010
+        </h3>
+        <ul class="text-orange text-center">
+          <li>Love Your Neighbor</li>
+          <li>Love My Lips</li>
+          <li>I Can Be Your Friend</li>
+          <li>His Cheeseburger</li>
+          <li>Thankfulness Song</li>
+          <li>The New and Improved Bunny Song</li>
+          <li>Down in My Heart</li>
+          <li>Endangered Love</li>
+          <li>God's Love</li>
+          <li>Think of Me</li>
+          <li>Jesus Loves Me</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="flex flex-col flex justify-center items-center pt-20">
+      <img class="w-44" src="./images/bigidea.png" />
+
+      <p class="text-yellow text-center">
+        © 2022 Big Idea Entertaiment, LLC. All rights reserved
+      </p>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".nav-toggler").each(function (_, navToggler) {
+          var target = $(navToggler).data("target");
+          $(navToggler).on("click", function () {
+            $(target).animate({
+              height: "toggle",
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
